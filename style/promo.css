@@ -1,0 +1,41 @@
+.title-promo {
+  margin-top: 60px;
+  text-align: center;
+  span {
+    position: relative;
+  }
+  span::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    right: 50px;
+    bottom: -38px;
+    @media (max-width: 426px) {
+      font-size: 35px;
+      bottom: -15px;
+    }
+  }
+}
+.content__promo {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+
+  .text__content {
+    width: 535px;
+    margin-right: 15px;
+    @media (max-width: 426px) {
+      width: 70%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1146px) {
+    flex-direction: column;
+  }
+  @media (max-width: 426px) {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,182 @@
+.service {
+  margin-top: 160px;
+  @media (max-width: 426px) {
+    margin-top: 35px;
+  }
+}
+
+.info__service {
+  display: flex;
+  align-items: flex-start;
+  @media (max-width: 1146px) {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.title-info {
+  margin: 0 52px 0 0;
+  span {
+    position: relative;
+  }
+  span::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    left: 0;
+    bottom: -38px;
+    @media (max-width: 1146px) {
+      left: 100px;
+      bottom: -15px;
+    }
+  }
+  @media (max-width: 426px) {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+.text__info {
+  span {
+    font-weight: bold;
+  }
+}
+
+.geo__service {
+  margin-top: 46px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: url('../img/globalService/serviceBG.svg') left center no-repeat;
+  @media (max-width: 769px) {
+    justify-content: center;
+  }
+}
+
+.clients-grid {
+  width: 490px;
+  height: 358px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  @media (max-width: 426px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .client-card {
+    width: 150px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 30px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    &:hover {
+      scale: 1.1;
+      transition: 0.5s;
+    }
+  }
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+
+  .title__customers {
+    span {
+      position: relative;
+    }
+    font-size: 28px;
+    span::after {
+      content: '';
+      display: block;
+      width: 97px;
+      height: 4px;
+      background-color: var(--bright-orange-color);
+      position: absolute;
+      right: 50px;
+      bottom: -38px;
+      @media (max-width: 426px) {
+        bottom: -15px;
+      }
+    }
+  }
+  .text__customers {
+    margin-top: 49px;
+    span {
+      width: 800px;
+    }
+    @media (max-width: 426px) {
+      margin-top: 10px;
+    }
+  }
+
+  .customers-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    @media (max-width: 1146px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+    @media (max-width: 769px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .card__customers {
+    position: relative;
+    width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    gap: 15px;
+    align-items: center;
+    background-color: #f1f8fe;
+    img {
+      fill: #333;
+    }
+  }
+  @media (max-width: 426px) {
+    margin-top: 165px;
+  }
+}
+
+.card__customers:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('../img/globalService/Customers/hoverArrow.svg') center center /
+    cover no-repeat;
+  left: 65px;
+  bottom: 14px;
+}
+
+.card__customers:hover {
+  background: var(--dark-blue-color);
+  border-radius: 12px;
+
+  span {
+    color: #fff;
+  }
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+}

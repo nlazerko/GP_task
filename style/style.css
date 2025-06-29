@@ -1,0 +1,42 @@
+:root {
+  --dark-blue-color: linear-gradient(75deg, #004ca6 1%, #0c95cf 100%);
+  --bright-orange-color: #ff5e00;
+  --dark-color: #333;
+  --main-blue-color: #2b9ad6;
+  --technology-bg: #e9eff8;
+  --leadership-bg: #f1f8fc;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1600px;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.title {
+  font-family: OpenSans;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+.text {
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.85;
+  color: var(--dark-color);
+}

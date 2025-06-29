@@ -1,0 +1,183 @@
+.leadership {
+  margin-top: 100px;
+  background-color: var(--leadership-bg);
+}
+.wrapper__leadership {
+  display: flex;
+  flex-direction: column;
+}
+.title__leadership {
+  margin-top: 100px;
+  text-align: center;
+  span {
+    position: relative;
+  }
+  span::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-blue-color);
+    position: absolute;
+    right: 50px;
+    bottom: -38px;
+    @media (max-width: 426px) {
+      font-size: 35px;
+      bottom: -15px;
+    }
+  }
+}
+.top-cards__leadership {
+  display: flex;
+  gap: 169px;
+  margin-top: 60px;
+  @media (max-width: 769px) {
+    gap: 50px;
+  }
+  @media (max-width: 426px) {
+    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    align-items: center;
+  }
+}
+.card__leadership {
+  position: relative;
+  width: 293px;
+  height: 361px;
+  display: flex;
+  flex-direction: column;
+
+  .card-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(35% at 50% 35%);
+  }
+
+  .card-info {
+    position: relative;
+    z-index: 2;
+    margin-top: 259px;
+    margin-left: 27px;
+
+    .name {
+      font-family: OpenSans;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.4;
+
+      color: #194f94;
+      margin: 0;
+    }
+    .job-title {
+      margin: 0;
+    }
+  }
+}
+
+.card__leadership::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('../img/Leadership/linkedinLink.svg') center center / cover
+    no-repeat;
+  right: 32px;
+  bottom: 140px;
+}
+
+.card__leadership:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('../img/globalService/Customers/hoverArrow.svg') center center /
+    cover no-repeat;
+  right: 32px;
+  bottom: 140px;
+}
+
+.bottom-cards__leadership {
+  display: flex;
+  justify-content: center;
+  gap: 176px;
+  margin: 78px 200px 122px 200px;
+  @media (max-width: 769px) {
+    gap: 50px;
+    margin: 50px 0 100px 0;
+  }
+  @media (max-width: 426px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.zhitomirsky {
+  background: url('../img/Leadership/RodionZhitomirsky.png') center / cover
+    no-repeat;
+}
+
+.zubekhin {
+  background: url('../img/Leadership/SergeyZubekhin.png') center / cover
+    no-repeat;
+}
+.bondarenko {
+  background: url('../img/Leadership/MariaBondarenko.jpg') center / cover
+    no-repeat;
+}
+
+.boiko {
+  background: url('../img/Leadership/EugeneBoiko.png') center / cover no-repeat;
+}
+.bean {
+  background: url('../img/Leadership/FredBean.png') center / cover no-repeat;
+}
+
+.card__leadership:hover {
+  .zhitomirsky {
+    cursor: pointer;
+    clip-path: none;
+    border-radius: 13px;
+    background: url('../img/Leadership/hover/RodionZhitomirsky.png') center /
+      cover no-repeat;
+  }
+  .zubekhin {
+    cursor: pointer;
+    clip-path: none;
+    border-radius: 13px;
+    background: url('../img/Leadership/hover/SergeyZubekhin.png') center / cover
+      no-repeat;
+  }
+  .bondarenko {
+    cursor: pointer;
+    clip-path: none;
+    border-radius: 13px;
+    background: url('../img/Leadership/hover/MariaBondarenko.jpg') center /
+      cover no-repeat;
+  }
+
+  .boiko {
+    cursor: pointer;
+    clip-path: none;
+    border-radius: 13px;
+    background: url('../img/Leadership/hover/EugeneBoiko.png') center / cover
+      no-repeat;
+  }
+  .bean {
+    cursor: pointer;
+    clip-path: none;
+    border-radius: 13px;
+    background: url('../img/Leadership/hover/FredBean.png') center / cover
+      no-repeat;
+  }
+  .card-info {
+    .name {
+      color: #fff;
+    }
+    .job-title {
+      color: #fff;
+    }
+  }
+}
